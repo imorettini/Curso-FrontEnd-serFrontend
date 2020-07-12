@@ -8,94 +8,53 @@
     <meta name="description" content="Maneiro">
     <meta name="keywords" content="html5, tecnologia">
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: lightgray;
-        }
-        
-        #home {
-            text-align: center;
-        }
-        
-        #menu {
-            text-align: right;
-        }
-        
-        #main-img {
-            background-image: url(imagens/bg-3.jpg);
-        }
-        
-        .title {
-            text-align: center;
-            text-transform: uppercase;
-            font-family: Arial Black;
-            text-shadow: black;
-            color: white;
-            font-size: 50px;
-        }
-        
-        #subtitle {
-            text-align: center;
-            text-shadow: black;
-            color: white;
-        }
-        
-        #cards {
-            text-align: center;
-            background-color: white;
-            background-position: center;
-        }
-        
-        #article {
-            background-color: white;
-            background-position: center;
-            text-align: left;
-        }
-        
-        footer {
-            font-size: 14px;
-            text-align: center;
-            color: white;
-            background-color: black;
-            opacity: 0.4;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="home">
-
-        <header>
-            <div id="main-img">
-                <div id="menu">
-                    <button id="inicio">INICIO</button>
-                    <button id="quem-sou-eu">QUEM SOU EU</button>
-                    <button id="contato">CONTATO</button>
-                </div>
-                <p class="title">Curso Web</p>
-                <p class="title">Fundamentos</p>
-                <p id="subtitle">Aprenda HTML, CSS e Javascript</p>
+    <div class="home">
+        <header class="top-header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Quem sou eu</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="top-header-content">
+                <h1>Curso Web Fundamentos</h1>
+                <p>Aprenda HTML, CSS e Javascript</p>
             </div>
         </header>
-
-        <nav id="cards">
-            <img src="imagens/card_01.png" class="img-card" alt="Seletores">
-            <img src="imagens/card_02.jpg" class="img-card" alt="Posicionamento">
-            <img src="imagens/card_03.jpg" class="img-card" alt="Fontes e Ícones">
-        </nav>
-
         <main>
-            <div id="article">
-                <h3>titulo</h3>
-                <p>Primeiro parágrafo de exemplo</p>
-                <p>Segundo parágrafo de exemplo</p>
-            </div>
+            <section class="content-section">
+                <div class="card">
+                    <img src="imagens/card_01.png" class="img-card" alt="">
+                    <p>Seletores</p>
+                </div>
+                <div class="card">
+                    <img src="imagens/card_04.jpg" class="img-card" alt="">
+                    <p>Posicionamento</p>
+                </div>
+                <div class="card">
+                    <img src="imagens/card_03.jpg" class="img-card" alt="">
+                    <p>Fontes e Ícones</p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <article>
+                    <header class="content-header">
+                        <h2>titulo</h2>
+                    </header>
+                    <p>Primeiro parágrafo de exemplo</p>
+                    <p>Segundo parágrafo de exemplo</p>
+                </article>
+            </section>
         </main>
-
-    </div>
-
-    <footer>Copyright 2020</footer>
+        <footer>
+            <p>Copyright &copy; 2020</p>
+        </footer>
 </body>
 
 </html>
